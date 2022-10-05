@@ -15,11 +15,15 @@
 
     <!--link to css file-->
     <link rel="stylesheet" href="css/main.css">
+
+    <!--icons for menu-->
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <section class="navigation">
             <div class="menuLogo">
+                <iconify-icon icon="line-md:close-to-menu-transition"></iconify-icon>
                 <p>KB<br>NO</p>
             </div>
             <nav>
@@ -30,6 +34,9 @@
                     <li>projects</li>
                 </ul>
             </nav>
+            <div class="menuClose">
+                <iconify-icon icon="line-md:menu-to-close-transition"></iconify-icon>
+            </div>
         </section><!--end navigation section-->
         <section class="hero">
             <div class="heroImg"></div>
@@ -41,11 +48,52 @@
             <p class="borderKbno">kbno</p>
             <!--might need to repeat ^^^ not sure yet-->
             <div class="bubbles">
-                <div class="bubble1"></div>
-                <div class="bubble2"></div>
-                <div class="bubble3"></div>
-            </div>
-        </section>
-    </div>
+                <div class="bubble1"><!--inspiration-->
+                    <p class="topic1">inspiration</p>
+                    <p class="bub1Cont">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex praesentium illo illum harum modi explicabo aliquam? Repellat, architecto tempora! Impedit!
+                    </p>
+                </div>
+                <div class="bubble2"><!--style MAYBE-->
+                    <p class="topic2">style</p>
+                    <p class="bub2Cont">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur temporibus quod alias sunt eius iusto, quasi, dolorem vero facilis excepturi nesciunt necessitatibus impedit asperiores tempora?
+                    </p>
+                </div>
+                <div class="bubble3"><!--why-->
+                    <p class="topic3">why</p>
+                    <p class="bub3Cont">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem molestiae dolores iure iusto quasi! Nihil perspiciatis corporis ullam commodi sed voluptatibus similique quam recusandae. Unde ipsum dolorum optio quod. Perferendis labore a dolor praesentium excepturi?
+                    </p>
+                </div>
+            </div><!--end bubbles-->
+        </section><!--end hero section-->
+        <section class="imageGal">
+            <!--enter gallery code here-->
+        </section><!--end imageGal secetion-->
+        <section class="contactUs">
+            <form action="#">
+                <input type="text" name="name" class="name" id="name">
+                <label for="name" class="nameL">Name: </label>
+
+                <input type="tel" name="phone" class="phone" id="phone" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <label for="phone" class="phoneL" >Phone #: </label>
+
+                <input type="email" name="email" class="email" id="email" required>
+                <label for="email" class="emailL">Email: </label>
+
+                <label for="reason" class="reasonL">Reason: </label>
+                <select name="reason" id="reason">
+                    <option value="1"></option>
+                    <option value="1"></option>
+                    <option value="1"></option>
+                </select>
+
+                <label for="comments" class="commentsL">Comments: </label>
+                <textarea name="comments" id="" cols="30" rows="10"></textarea>
+            </form>
+        </section><!--end contactUs section-->
+        
+    </div><!--end wrapper-->
 </body>
 </html>
