@@ -65,17 +65,91 @@ section.hero{
         width: 100%;
         z-index: -1;    
     }
-    .borderKbno{
+    
+    .borderKbno, .borderKbno2{
         display: block;
         position: absolute;
         margin-left: -.5em;
-        margin-top: .4em;
         color: red;
+        opacity: .5;
         rotate: 270deg;
         text-transform: uppercase;
         font-size: 10rem;
         z-index: -1;
-
     }
+    .borderKbno{
+        margin-top: .4em;
+    }
+    .borderKbno2{
+        margin-top: 3em;
+    }
+    .diamondB{
+        position: absolute;
+        color: purple;
+        rotate: 270deg;
+        font-size: 8rem;
+        margin: 0;
+        margin-left: -.25em;
+        margin-top: 1.88em;
+        z-index: -1;
+    }
+    .welcomeM{
+        position: relative;
+        margin: 0;
+        font-size: 3rem;
+        text-align: center;
+        color: red;
+        text-shadow: 3px 3px 5px black;
+        top: 1em;
+        animation: moveDown 2s forwards;
+    }
+    .bubbles{
+        display: flex;
+        justify-content: center;
+        p{
+            text-align: center;
+        }
+    }
+    .circle1, .circle2, .circle3{
+        margin: 0;
+        position: relative;
+        top: 2.5em;
+        border-radius: 50%;
+        background-color: aqua;
+        opacity: .6;
+        height: 8em;
+        width: 8em;
+        display: inline-block;
+    }
+    .circle2{
+        background-color: black;
+    }
+    .circle3{
+        background-color: orangered;
+    }
+    .topic1, .topic2, .topic3{
+        position: relative;
+        top: -6em;
+        color: cyan;
+        opacity: 0;
+        &hover{
+            transform: translateY(-3em);
+            opacity: 1;
+        }
+        //margin: 0;
+        //margin-top: 0em;
+        //opacity: 0;
+    }
+}
 
+//@@@@@@@@@@@@@@ANIMATIONANIMATIONANIMATIONANIMATIONANIMATION
+@keyframes moveDown{
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

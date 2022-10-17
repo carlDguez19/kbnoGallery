@@ -60,14 +60,97 @@ section.hero .heroImg {
   width: 100%;
   z-index: -1;
 }
-section.hero .borderKbno {
+section.hero .borderKbno, section.hero .borderKbno2 {
   display: block;
   position: absolute;
   margin-left: -0.5em;
-  margin-top: 0.4em;
   color: red;
+  opacity: 0.5;
   rotate: 270deg;
   text-transform: uppercase;
   font-size: 10rem;
   z-index: -1;
+}
+section.hero .borderKbno {
+  margin-top: 0.4em;
+}
+section.hero .borderKbno2 {
+  margin-top: 3em;
+}
+section.hero .diamondB {
+  position: absolute;
+  color: purple;
+  rotate: 270deg;
+  font-size: 8rem;
+  margin: 0;
+  margin-left: -0.25em;
+  margin-top: 1.88em;
+  z-index: -1;
+}
+section.hero .welcomeM {
+  position: relative;
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+  color: red;
+  text-shadow: 3px 3px 5px black;
+  top: 1em;
+  -webkit-animation: moveDown 2s forwards;
+          animation: moveDown 2s forwards;
+}
+section.hero .bubbles {
+  display: flex;
+  justify-content: center;
+}
+section.hero .bubbles p {
+  text-align: center;
+}
+section.hero .circle1, section.hero .circle2, section.hero .circle3 {
+  margin: 0;
+  position: relative;
+  top: 2.5em;
+  border-radius: 50%;
+  background-color: aqua;
+  opacity: 0.6;
+  height: 8em;
+  width: 8em;
+  display: inline-block;
+}
+section.hero .circle2 {
+  background-color: black;
+}
+section.hero .circle3 {
+  background-color: orangered;
+}
+section.hero .topic1, section.hero .topic2, section.hero .topic3 {
+  position: relative;
+  top: -6em;
+  color: cyan;
+  opacity: 0;
+}
+section.hero .topic1hover, section.hero .topic2hover, section.hero .topic3hover {
+  transform: translateY(-3em);
+  opacity: 1;
+}
+
+@-webkit-keyframes moveDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=main.css.map */
