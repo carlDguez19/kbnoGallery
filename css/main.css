@@ -106,31 +106,43 @@ section.hero .bubbles p {
   text-align: center;
 }
 section.hero .circle1, section.hero .circle2, section.hero .circle3 {
-  margin: 0;
   position: relative;
   top: 2.5em;
   border-radius: 50%;
   background-color: aqua;
-  opacity: 0.6;
   height: 8em;
   width: 8em;
   display: inline-block;
+}
+section.hero .circle1 .topic1, section.hero .circle1 .topic2, section.hero .circle1 .topic3, section.hero .circle2 .topic1, section.hero .circle2 .topic2, section.hero .circle2 .topic3, section.hero .circle3 .topic1, section.hero .circle3 .topic2, section.hero .circle3 .topic3 {
+  position: relative;
+  top: 1.5em;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: orange;
+  -webkit-animation: moveTopics 4s forwards;
+          animation: moveTopics 4s forwards;
+}
+section.hero .circle1 .bub1Cont, section.hero .circle1 .bub2Cont, section.hero .circle1 .bub3Cont, section.hero .circle2 .bub1Cont, section.hero .circle2 .bub2Cont, section.hero .circle2 .bub3Cont, section.hero .circle3 .bub1Cont, section.hero .circle3 .bub2Cont, section.hero .circle3 .bub3Cont {
+  opacity: 0;
+  color: gray;
+}
+section.hero .circle1:hover, section.hero .circle2:hover, section.hero .circle3:hover {
+  height: 30em;
+  width: 8em;
+  border-radius: 10px;
+  transition: ease-in-out 2s;
+}
+section.hero .circle1:hover .bub1Cont, section.hero .circle1:hover .bub2Cont, section.hero .circle1:hover .bub3Cont, section.hero .circle2:hover .bub1Cont, section.hero .circle2:hover .bub2Cont, section.hero .circle2:hover .bub3Cont, section.hero .circle3:hover .bub1Cont, section.hero .circle3:hover .bub2Cont, section.hero .circle3:hover .bub3Cont {
+  transform: translateY(25px);
+  opacity: 1;
+  transition: ease-in-out 3s;
 }
 section.hero .circle2 {
   background-color: black;
 }
 section.hero .circle3 {
   background-color: orangered;
-}
-section.hero .topic1, section.hero .topic2, section.hero .topic3 {
-  position: relative;
-  top: -6em;
-  color: cyan;
-  opacity: 0;
-}
-section.hero .topic1hover, section.hero .topic2hover, section.hero .topic3hover {
-  transform: translateY(-3em);
-  opacity: 1;
 }
 
 @-webkit-keyframes moveDown {
@@ -152,5 +164,25 @@ section.hero .topic1hover, section.hero .topic2hover, section.hero .topic3hover 
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@-webkit-keyframes moveTopics {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes moveTopics {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }/*# sourceMappingURL=main.css.map */

@@ -111,34 +111,42 @@ section.hero{
         }
     }
     .circle1, .circle2, .circle3{
-        margin: 0;
         position: relative;
         top: 2.5em;
         border-radius: 50%;
         background-color: aqua;
-        opacity: .6;
         height: 8em;
         width: 8em;
         display: inline-block;
+        .topic1, .topic2, .topic3{
+            position: relative;
+            top: 1.5em;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            color: orange;
+            animation: moveTopics 4s forwards;
+        }
+        .bub1Cont, .bub2Cont, .bub3Cont{
+            opacity: 0;
+            color: gray;
+        }
+        &:hover{
+            height: 30em;
+            width: 8em;
+            border-radius: 10px;
+            transition: ease-in-out 2s;
+            .bub1Cont, .bub2Cont, .bub3Cont{
+                transform: translateY(25px);
+                opacity: 1;
+                transition: ease-in-out 3s;
+            }
+        }
     }
     .circle2{
         background-color: black;
     }
     .circle3{
         background-color: orangered;
-    }
-    .topic1, .topic2, .topic3{
-        position: relative;
-        top: -6em;
-        color: cyan;
-        opacity: 0;
-        &hover{
-            transform: translateY(-3em);
-            opacity: 1;
-        }
-        //margin: 0;
-        //margin-top: 0em;
-        //opacity: 0;
     }
 }
 
@@ -151,5 +159,16 @@ section.hero{
     to{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes moveTopics{
+    from{
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
     }
 }
