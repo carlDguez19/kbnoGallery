@@ -145,6 +145,60 @@ section.hero .circle3 {
   background-color: orangered;
 }
 
+section.imageGal {
+  height: 2em;
+  width: auto;
+  margin-bottom: 20em;
+}
+
+section.contactUs {
+  position: relative;
+}
+section.contactUs h1 {
+  margin: 3rem;
+  margin-top: 10rem;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: -0.2rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 1px red;
+  color: #000000;
+}
+section.contactUs .rectContact {
+  display: flex;
+  justify-content: center;
+}
+section.contactUs .rectContact label {
+  display: block;
+  text-align: right;
+  width: 8rem;
+  float: left;
+  margin-right: 1em;
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: lime;
+}
+section.contactUs .rectContact input, section.contactUs .rectContact textarea, section.contactUs .rectContact select {
+  font-weight: 400;
+  margin: 0 1em;
+  display: block;
+  width: 12em;
+  min-height: 1.5em;
+  margin-bottom: 2em;
+}
+section.contactUs .rectContact .submitB {
+  display: block;
+  width: 12em;
+  margin: 0 auto;
+  margin-top: 3em;
+  font-size: 1.5rem;
+  background-color: #233e97;
+  border: none;
+  color: #ffde59;
+  box-shadow: 2px 2px 1px gray;
+  cursor: pointer;
+}
+
 @-webkit-keyframes moveDown {
   from {
     opacity: 0;

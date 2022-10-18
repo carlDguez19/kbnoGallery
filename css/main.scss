@@ -149,6 +149,59 @@ section.hero{
         background-color: orangered;
     }
 }
+section.imageGal{
+    height: 2em;
+    width: auto;
+    margin-bottom: 20em;
+}
+section.contactUs{
+    position: relative;
+    h1{ //contact us header
+        margin: 3rem;
+        margin-top: 10rem;
+        text-align: center;
+        font-size: 3rem;
+        letter-spacing: -.2rem;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 1px red;
+        color: #000000;
+    }
+    .rectContact{//contact us wrapper/ contact form wrapper
+        display: flex;
+        justify-content: center;
+        label{
+            display: block;//take block space
+            text-align: right;
+            width: 8rem;//make labels not be overcrowded
+            float: left; //place left of inputs
+            margin-right: 1em;
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: lime;
+        }
+        input, textarea, select{
+            font-weight: 400;
+            margin: 0 1em;
+            display: block;//take block space
+            width: 12em; //uniform size of input fields
+            min-height: 1.5em;
+            margin-bottom: 2em;
+        }
+        .submitB{ //type submit
+            display: block;//take block space
+            width: 12em;
+            margin: 0 auto;
+            margin-top: 3em;
+            font-size: 1.5rem;
+            //font-weight: bold; MAYBE
+            background-color: #233e97;
+            border: none;
+            color: #ffde59;
+            box-shadow: 2px 2px 1px gray;
+            cursor: pointer;
+        }
+    }
+}
 
 //@@@@@@@@@@@@@@ANIMATIONANIMATIONANIMATIONANIMATIONANIMATION
 @keyframes moveDown{

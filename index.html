@@ -69,26 +69,31 @@
             <!--enter gallery code here-->
         </section><!--end imageGal secetion-->
         <section class="contactUs">
-            <form action="#">
-                <input type="text" name="name" class="name" id="name">
-                <label for="name" class="nameL">Name: </label>
+            <h1 class="contactMe">contact me</h1>
+            <div class="rectContact">
+                <form action="#">
+                    <label for="name" class="nameL">Name: </label>
+                    <input type="text" name="name" class="name" id="name">
 
-                <input type="tel" name="phone" class="phone" id="phone" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                <label for="phone" class="phoneL" >Phone #: </label>
+                    <label for="phone" class="phoneL" >Phone #: </label>
+                    <input type="tel" name="phone" class="phone" id="phone" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
 
-                <input type="email" name="email" class="email" id="email" required>
-                <label for="email" class="emailL">Email: </label>
+                    <label for="email" class="emailL">Email: </label>
+                    <input type="email" name="email" class="email" id="email" required>
 
-                <label for="reason" class="reasonL">Reason: </label>
-                <select name="reason" id="reason">
-                    <option value="1"></option>
-                    <option value="1"></option>
-                    <option value="1"></option>
-                </select>
+                    <label for="reason" class="reasonL">Reason: </label>
+                    <select name="reason" id="reason">
+                        <option value="1"></option>
+                        <option value="1"></option>
+                        <option value="1"></option>
+                    </select>
 
-                <label for="comments" class="commentsL">Comments: </label>
-                <textarea name="comments" id="" cols="30" rows="10"></textarea>
-            </form>
+                    <label for="comments" class="commentsL">Comments: </label>
+                    <textarea name="comments" id="" cols="20" rows="5"></textarea>
+
+                    <input type="submit" class="submitB">
+                </form>
+            </div>
         </section><!--end contactUs section-->
         
     </div><!--end wrapper-->
