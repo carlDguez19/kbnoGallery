@@ -60,7 +60,7 @@ section.hero .heroImg {
   width: 100%;
   z-index: -1;
 }
-section.hero .borderKbno, section.hero .borderKbno2 {
+section.hero .borderKbno, section.hero .borderKbno2, section.hero .borderKbno3 {
   display: block;
   position: absolute;
   margin-left: -0.5em;
@@ -77,7 +77,10 @@ section.hero .borderKbno {
 section.hero .borderKbno2 {
   margin-top: 3em;
 }
-section.hero .diamondB {
+section.hero .borderKbno3 {
+  margin-top: 5.7em;
+}
+section.hero .diamondB, section.hero .diamondB2, section.hero .diamondB3 {
   position: absolute;
   color: purple;
   rotate: 270deg;
@@ -86,6 +89,14 @@ section.hero .diamondB {
   margin-left: -0.25em;
   margin-top: 1.88em;
   z-index: -1;
+}
+section.hero .diamondB2 {
+  margin-top: 5.2em;
+}
+section.hero .diamondB3 {
+  margin-top: 8.55em;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 section.hero .welcomeM {
   position: relative;
@@ -109,7 +120,7 @@ section.hero .circle1, section.hero .circle2, section.hero .circle3 {
   position: relative;
   top: 2.5em;
   border-radius: 50%;
-  background-color: aqua;
+  background-color: #38b6ff;
   height: 8em;
   width: 8em;
   display: inline-block;
@@ -119,9 +130,15 @@ section.hero .circle1 .topic1, section.hero .circle1 .topic2, section.hero .circ
   top: 1.5em;
   text-transform: uppercase;
   font-size: 1.5rem;
-  color: orange;
+  color: #004aad;
   -webkit-animation: moveTopics 4s forwards;
           animation: moveTopics 4s forwards;
+}
+section.hero .circle1 .topic2, section.hero .circle2 .topic2, section.hero .circle3 .topic2 {
+  color: #008037;
+}
+section.hero .circle1 .topic3, section.hero .circle2 .topic3, section.hero .circle3 .topic3 {
+  color: #ff914d;
 }
 section.hero .circle1 .bub1Cont, section.hero .circle1 .bub2Cont, section.hero .circle1 .bub3Cont, section.hero .circle2 .bub1Cont, section.hero .circle2 .bub2Cont, section.hero .circle2 .bub3Cont, section.hero .circle3 .bub1Cont, section.hero .circle3 .bub2Cont, section.hero .circle3 .bub3Cont {
   opacity: 0;
@@ -139,10 +156,10 @@ section.hero .circle1:hover .bub1Cont, section.hero .circle1:hover .bub2Cont, se
   transition: ease-in-out 3s;
 }
 section.hero .circle2 {
-  background-color: black;
+  background-color: #7ed957;
 }
 section.hero .circle3 {
-  background-color: orangered;
+  background-color: #ffde59;
 }
 
 section.imageGal {
@@ -197,6 +214,28 @@ section.contactUs .rectContact .submitB {
   color: #ffde59;
   box-shadow: 2px 2px 1px gray;
   cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  margin-top: 2em;
+}
+footer p {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  background-color: red;
+  height: auto;
+}
+footer p a {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: gray;
+}
+footer p:hover a {
+  color: blue;
+  cursor: none;
 }
 
 @-webkit-keyframes moveDown {

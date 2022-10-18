@@ -66,7 +66,7 @@ section.hero{
         z-index: -1;    
     }
     
-    .borderKbno, .borderKbno2{
+    .borderKbno, .borderKbno2, .borderKbno3{
         display: block;
         position: absolute;
         margin-left: -.5em;
@@ -83,7 +83,10 @@ section.hero{
     .borderKbno2{
         margin-top: 3em;
     }
-    .diamondB{
+    .borderKbno3{
+        margin-top: 5.7em;
+    }
+    .diamondB, .diamondB2, .diamondB3{
         position: absolute;
         color: purple;
         rotate: 270deg;
@@ -92,6 +95,16 @@ section.hero{
         margin-left: -.25em;
         margin-top: 1.88em;
         z-index: -1;
+    }
+    .diamondB2{
+        margin-top: 5.2em;
+    }
+    .diamondB3{
+        //margin: 0;
+        //padding: 0;
+        margin-top: 8.55em;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
     .welcomeM{
         position: relative;
@@ -114,7 +127,7 @@ section.hero{
         position: relative;
         top: 2.5em;
         border-radius: 50%;
-        background-color: aqua;
+        background-color: #38b6ff;
         height: 8em;
         width: 8em;
         display: inline-block;
@@ -123,8 +136,14 @@ section.hero{
             top: 1.5em;
             text-transform: uppercase;
             font-size: 1.5rem;
-            color: orange;
+            color: #004aad;
             animation: moveTopics 4s forwards;
+        }
+        .topic2{
+            color: #008037
+        }
+        .topic3{
+            color: #ff914d;
         }
         .bub1Cont, .bub2Cont, .bub3Cont{
             opacity: 0;
@@ -143,10 +162,10 @@ section.hero{
         }
     }
     .circle2{
-        background-color: black;
+        background-color: #7ed957;
     }
     .circle3{
-        background-color: orangered;
+        background-color: #ffde59;
     }
 }
 section.imageGal{
@@ -199,6 +218,29 @@ section.contactUs{
             color: #ffde59;
             box-shadow: 2px 2px 1px gray;
             cursor: pointer;
+        }
+    }
+}
+footer{
+    width: 100%;
+    margin-top: 2em;
+    p{
+        text-align: center;
+        font-family: sans-serif;
+        font-size: .8rem;
+        background-color: red;
+        height: auto;
+        a{
+            font-family: sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+            color: gray;
+        }
+        &:hover{
+            a{
+                color: blue;
+                cursor: none;
+            }
         }
     }
 }
