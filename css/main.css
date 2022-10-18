@@ -163,9 +163,38 @@ section.hero .circle3 {
 }
 
 section.imageGal {
-  height: 2em;
-  width: auto;
-  margin-bottom: 20em;
+  margin: 0;
+  padding: 0;
+  margin-top: 10em;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #38b6ff;
+}
+section.imageGal .slider {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+section.imageGal .slider .slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+section.imageGal .slider .slides input {
+  display: none;
+}
+section.imageGal .slider .slide {
+  width: 20%;
+  transition: 2s;
+}
+section.imageGal .slider .slide img {
+  width: 800px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 section.contactUs {
