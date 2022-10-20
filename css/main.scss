@@ -1,3 +1,4 @@
+//bug fixed in kbnoGalTest
 *{
     font-family: 'Anton', sans-serif;
     //margin: .5em;
@@ -33,8 +34,8 @@ header.navigation{
     .diamond{
         position: absolute;
         margin: 0;
-        margin-top: 1.2em;
-        margin-left: .3em;
+        margin-top: 1.9em;
+        margin-left: 1.1em;
         color: red;
         font-size: 1.2rem;
     }
@@ -44,11 +45,13 @@ header.navigation{
         color: limegreen;
         font-size: 1.3rem;
         right: 0;
-        top: 0;
+        top: .6em;
         margin: 1.2em;
     }
     .menuLogo{
-        margin: .5em;
+        margin: .8em;
+        margin-left: 1em;
+        font-size: 1.3rem;
         text-shadow: 0px 3px 3px gray;
     }
 }//header menu nav
@@ -72,7 +75,7 @@ section.hero{
     .borderKbno, .borderKbno2, .borderKbno3{
         display: block;
         position: absolute;
-        margin-left: -.5em;
+        margin-left: -.4em;
         color: red;
         opacity: .5;
         rotate: 270deg;
@@ -94,24 +97,24 @@ section.hero{
         color: purple;
         rotate: 270deg;
         font-size: 8rem;
-        margin: .5em;
-        margin-left: .1em;
-        margin-top: 2.2em;
+        margin: 0em;
+        margin-left: .27em;
+        margin-top: 2.3em;
         z-index: -1;
     }
     .diamondB2{
-        margin-top: 5.2em;
+        margin-top: 5.6em;
     }
     .diamondB3{
         //margin: 0;
         //padding: 0;
-        margin-top: 8.55em;
+        margin-top: 9em;
         margin-bottom: 0;
         padding-bottom: 0;
     }
     .welcomeM{
         position: relative;
-        margin: 0;
+        margin: .5em;
         font-size: 3rem;
         text-align: center;
         color: red;
@@ -131,11 +134,13 @@ section.hero{
         top: 2.5em;
         border-radius: 50%;
         background-color: #38b6ff;
+        margin: .5em;
         margin-bottom: 10em;
         height: 8em;
         width: 8em;
         display: inline-block;
         .topic1, .topic2, .topic3{
+            margin: .5em;
             position: relative;
             top: 1.5em;
             text-transform: uppercase;
@@ -176,6 +181,7 @@ section.hero{
 //imageGALimageGALimageGALimageGALimageGALimageGALimageGALimageGALimageGALimageGALimageGAL
 //imageGALimageGALimageGALimageGALimageGALimageGALimageGALimageGALimageGALimageGALimageGAL
 section.imageGal{
+    //opacity: 0;
     margin: 0;
     padding: 0;
     height: 30em;
