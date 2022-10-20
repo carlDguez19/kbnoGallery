@@ -121,6 +121,7 @@ section.hero .circle1, section.hero .circle2, section.hero .circle3 {
   top: 2.5em;
   border-radius: 50%;
   background-color: #38b6ff;
+  margin-bottom: 10em;
   height: 8em;
   width: 8em;
   display: inline-block;
@@ -165,21 +166,24 @@ section.hero .circle3 {
 section.imageGal {
   margin: 0;
   padding: 0;
-  margin-top: 10em;
-  height: 100vh;
+  height: 30em;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #38b6ff;
+  border-radius: 30px;
 }
 section.imageGal .slider {
-  width: 800px;
-  height: 500px;
+  width: 20em;
+  height: 25em;
   border-radius: 10px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 section.imageGal .slider .slides {
-  width: 500%;
+  width: 600%;
   height: 500px;
   display: flex;
 }
@@ -191,10 +195,26 @@ section.imageGal .slider .slide {
   transition: 2s;
 }
 section.imageGal .slider .slide img {
-  width: 800px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+section.imageGal .navigation-manual {
+  position: absolute;
+  width: 1925px;
+  margin-top: 27em;
+  display: flex;
+  justify-content: center;
+}
+section.imageGal .manual-btn {
+  border: 2px solid blue;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
 }
 
 section.contactUs {
