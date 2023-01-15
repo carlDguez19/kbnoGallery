@@ -182,18 +182,21 @@ section.hero{
 //imageGALimageGALimageGALimageGALimageGALimageGALimageGALimageGALimageGALimageGALimageGAL
 section.imageGal{
     //opacity: 0;
+    position: relative;
+    left: 12.5%;
     margin: 0;
     padding: 0;
-    height: 30em;
+    width: 75%;//50%
+    height: 50%;//30em
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #38b6ff;
+    background: red;
     border-radius: 30px;
     //borderANDpicsborderANDpicsborderANDpicsborderANDpicsborderANDpicsborderANDpicsborderANDpicsborderANDpicsborderANDpics
     .slider{
-        width: 20em;
-        height: 2em;
+        width: 800px;//20em
+        height: 600px;//25em
         border-radius: 10px;
         overflow: hidden;
         display: flex;
@@ -208,29 +211,30 @@ section.imageGal{
             display: none;
         }
         .slide{
-            width: 20%;
-            margin: 1em;
+            width: 20%; //20%
+            //margin: 1em;
             transition: 2s;
-            padding: 0;
+            //padding: 0;
         }
         .slide img{
-            width: 400px;
-            height: 400px;
+            width: 800px; //400px
+            height: 500px; //400px
             object-fit: cover;
-            object-position: center;
+            //object-position: center;
         }
     }
     //manual slide nav
     .navigation-manual{
         position: absolute;
-        width: 1925px;
-        margin-top: 27em;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-top: 40em; //27em
         display: flex;
         justify-content: center;
     }
     .manual-btn{
-        border: 2px solid blue;
-        padding: 5px;
+        border: 2px solid blue; //2px
+        padding: 5px; //5px
         border-radius: 10px;
         cursor: pointer;
         transition: 1s;
@@ -240,23 +244,23 @@ section.imageGal{
         }
     }
     .manual-btn:not(:last-child){
-        margin-right: 40px;
+        margin-right: 40px; //40px
     }
 
     #radio1:checked ~ .first{
-        margin-left: 40%;
+        margin-left: 40%; //40%
     }
     #radio2:checked ~ .first{
-        margin-left: 19%;
+        margin-left: 20%; //19%
     }
     #radio3:checked ~ .first{
-        margin-left: -3%;
+        margin-left: 0%; //-3%
     }
     #radio4:checked ~ .first{
-        margin-left: -25%;
+        margin-left: -20%; //-25%
     }
     #radio5:checked ~ .first{
-        margin-left: -46%;
+        margin-left: -40%; //-46%
     }
 }
 //contactUScontactUScontactUScontactUScontactUScontactUScontactUScontactUScontactUS
