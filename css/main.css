@@ -214,7 +214,7 @@ section.imageGal .navigation-manual {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  margin-top: 40em;
+  margin-top: 36em;
   display: flex;
   justify-content: center;
 }
@@ -227,6 +227,23 @@ section.imageGal .manual-btn {
 }
 section.imageGal .manual-btn:hover {
   background: blue;
+}
+section.imageGal .navigation-auto {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  transform: translate(-50%, 0);
+  justify-content: center;
+  margin-top: 36em;
+}
+section.imageGal .navigation-auto div {
+  border: 2px solid blue;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+section.imageGal .navigation-auto div:not(:last-child) {
+  margin-right: 40px;
 }
 section.imageGal .manual-btn:not(:last-child) {
   margin-right: 40px;
@@ -245,6 +262,21 @@ section.imageGal #radio4:checked ~ .first {
 }
 section.imageGal #radio5:checked ~ .first {
   margin-left: -40%;
+}
+section.imageGal #radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: blue;
+}
+section.imageGal #radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: blue;
+}
+section.imageGal #radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: blue;
+}
+section.imageGal #radio4:checked ~ .navigation-auto .auto-btn4 {
+  background-color: blue;
+}
+section.imageGal #radio5:checked ~ .navigation-auto .auto-btn5 {
+  background-color: blue;
 }
 
 section.contactUs {
