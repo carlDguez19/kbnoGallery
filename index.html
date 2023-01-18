@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
     <title>KBNO Gallery</title>
 
     <!--need to enter favicons here-->
@@ -130,6 +132,46 @@
                 }, 5000);
             </script>
         </section><!--end imageGal secetion-->
+        <section><!-- I can add some description talking about the following grid gall and how those designs might have some products with the image on them and to visit my store on shopify -->
+
+        </section><!--  end discription -->
+        <section><!-- gridGal -->
+            <div class="containerGG">
+                <div class="image-container">
+                    <div class="image"><img src="images/gridGal/artImage1.jpg" /><p class="info">test1</p></div>
+                    <div class="image"><img src="images/gridGal/artImage2.jpg" /><p class="info">test1</p></div>
+                    <div class="image"><img src="images/gridGal/artImage3.jpg" /><p class="info">test1</p></div>
+                    <div class="image"><img src="images/gridGal/artImage4.jpg" /><p class="info">test1</p></div>
+                    <div class="image"><img src="images/gridGal/artImage5.jpg" /><p class="info">test1</p></div>
+                    <div class="image"><img src="images/gridGal/artImage6.jpg" /><p class="info">test1</p></div>
+                    <div class="image"><img src="images/gridGal/artImage7.jpg" /><p class="info">test1</p></div>
+                    <div class="image"><img src="images/gridGal/artImage8.jpg" /><p class="info">test1</p></div>
+                    <div class="image"><img src="images/gridGal/artImage9.jpg" /><p class="info">test1</p></div>
+                    <div class="image"><img src="images/gridGal/artImage10.jpg" /><p class="info">test1</p></div>
+                    <div class="image"><img src="images/gridGal/artImage11.jpg" /><p class="info">test1</p></div>
+                    <div class="image"><img src="images/gridGal/artImage12.jpg" /><p class="info">test1</p></div>
+                </div>
+                <div class="overlay">
+                    <iconify-icon class="close" icon="line-md:close-circle"></iconify-icon> <!-- <span>&times</span> simple close button -->
+                    <img src="images/gridGal/artImage1.jpg" >
+                    <div class="olol">
+                        <p class="ginfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore accusantium sed consectetur animi natus adipisci exercitationem eius recusandae culpa, quae, temporibus similique sequi quo aut explicabo! Enim illo itaque nobis.</p>
+                    </div>
+                </div>
+            </div>
+            <script>
+                document.querySelectorAll('.image-container img').forEach(image => {
+                    image.onclick = () =>{
+                        document.querySelector('.overlay').style.display = 'block';
+                        document.querySelector('.overlay img').src = image.getAttribute('src');
+                    }
+                });
+        
+                document.querySelector('.overlay .close').onclick = () => {
+                    document.querySelector('.overlay').style.display = 'none';
+                }
+            </script>
+        </section>
         <section class="contactUs">
             <h1 class="contactMe">contact me</h1>
             <div class="rectContact">
