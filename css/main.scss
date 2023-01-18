@@ -223,6 +223,7 @@ section.imageGal{
             //object-position: center;
         }
     }
+
     //manual slide nav
     .navigation-manual{
         position: absolute;
@@ -243,6 +244,8 @@ section.imageGal{
             background: blue;
         }
     }
+
+    //automatic naviagation
     .navigation-auto{
         position: absolute;
         display: flex;
@@ -296,6 +299,96 @@ section.imageGal{
         background-color: blue;
     }
 }
+
+//gridGalgridGalgridGalgridGalgridGalgridGalgridGalgridGalgridGalgridGalgridGalgridGalgridGalgridGalgridGalgridGalgridGalgridGalgridGalgridGalgridGalgridGal
+.containerGG{
+    position: relative;
+    min-height: 100vh;
+    background: #ddd;
+}
+
+.containerGG .image-container{
+    margin: 40px auto;
+    width: 690px;
+    height: 510px;
+    background-color: gray;
+    display: grid;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 150px 150px 150px 150px;
+    gap: 30px;
+}
+
+.containerGG .image-container .image{
+    height: 150px;
+    width: 150px;
+    // border: 10px solid #fff;
+    // box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.containerGG .image-container .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .3s linear;
+}
+
+.containerGG .image-container .image :hover img{
+    transform: scale(1.3);
+}
+
+.containerGG .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.containerGG .overlay .close{
+    position: absolute;
+    top: 2%;
+    right: 15%;
+    font-size: 50px; //HAVE TO CHANGE TO EM
+    color: #ddd;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.containerGG .overlay img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 30%;
+    object-fit: cover;
+}
+
+.containerGG .overlay .olol{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    width: 25%;
+    display: none;
+}
+
+.containerGG .overlay .info{
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+
 //contactUScontactUScontactUScontactUScontactUScontactUScontactUScontactUScontactUS
 section.contactUs{
     position: relative;
