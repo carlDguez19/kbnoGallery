@@ -183,10 +183,10 @@ section.hero{
 section.imageGal{
     //opacity: 0;
     position: relative;
-    left: 12.5%;
+    left: 17.5%;//12.5%
     margin: 0;
     padding: 0;
-    width: 75%;//50%
+    width: 65%;//75%
     height: 50%;//30em
     display: flex;
     justify-content: center;
@@ -304,17 +304,21 @@ section.imageGal{
 section.gridGal{
     .containerGG{
         position: relative;
-        min-height: 100vh;
-        background: #ddd;
+        //min-height: 100vh;
+        background: red;
+        width: 65%;
+        left: 17.5%;
+        height: 65%;
+        border-radius: 10px;
         padding: 1px;
-        margin-top: 5em;
+        margin-top: 10em;
     }
     .containerGG .image-container{
         padding: 1px;
         margin: 40px auto;
         width: 690px;
         height: 510px;
-        background-color: gray;
+        background-color: red;
         display: grid;
         grid-template-rows: 150px 150px 150px;
         grid-template-columns: 150px 150px 150px 150px;
